@@ -1,11 +1,14 @@
 .nav{
-    width: 100%;
+    width: 76%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
     padding: 16px 0;
-    /* background-color: rgb(255, 255, 255); */
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    /* background-color: rgb(157, 21, 114); */
 }
 .menu{
     width: 100%;
@@ -50,4 +53,10 @@
     align-items: center;
     gap: 8px;
     /* background-color: blue; */
+}
+.nav_logo{
+    transition: transform 0.3s ease;
+}
+.nav_logo:hover {
+  transform: scale(1.03);
 }

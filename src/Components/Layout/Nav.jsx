@@ -9,7 +9,7 @@ import './Nav.css';
 const Nav = (props) => {
     return (<div className='nav'>            
             <div className='menu'>   
-                <Link to='/'>
+                <Link className='nav_logo' to='/'>
                     <img src={logo} alt="EZ-SAVER Logo"/>
                 </Link>
                 <NavLi url='/' title='About'/>
