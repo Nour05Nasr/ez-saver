@@ -1,0 +1,43 @@
+.parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+.scroller {
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+}
+
+.scroller span {
+  flex-shrink: 0;
+}
+
+.custom-scroll-text{
+    font-family: var(--font_1);
+    color: var(--accent_color);
+    z-index: -2;
+}
+
+.velocity_section{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .custom-scroll-text2{
+    font-family: var(--font_1);
+    color: var(--secondry_color);
+} */
+
+@media (min-width: 768px) {
+  .scroller {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
