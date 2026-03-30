@@ -8,16 +8,16 @@ padding: 0;
 text-decoration: none;
 }
 .cta_temp1{
-width: 200px;
-height: 6vh;
+width: 190px;
+/* height: 6vh; */
+padding: 12px;
 font-family: var(--font_2);
 font-size: 20px;
 text-align: center;
 font-style: normal;
-font-weight: 500;
 line-height: normal;
 text-decoration: none;
 color: var(--primary_color);
-border-radius: 8PX;
+border-radius: 8px;
 background-color: var(--secondry_color);
 }

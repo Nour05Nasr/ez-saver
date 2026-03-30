@@ -12,7 +12,7 @@ const Home = () => {
         <meta property="og:title" content="LogIn" />
     </Helmet> */}
 
-    {/* <Nav /> */}
+    <Nav />
    
     
     </div>);
