@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
+// import ScrollStack, { ScrollStackItem } from '../Components/Layout/ScrollStack'
+import ScrollStack from '../Components/Layout/ScrollStack';
+import ScrollStackItem from '../Components/Common/ScrollStackItem';
 import Nav from '../Components/Layout/Nav';
 import ScrollVelocity from '../Components/Layout/ScrollVelocity';
-import hero from '../Assets/hero.png';
-import speed from '../Assets/speed.png';
+import StackCard from '../Components/Common/StackCard';
+import hero from '../Assets/hero.svg';
+// import speed from '../Assets/speed.png';
+import H2 from '../Components/Common/H2';
 import CTA2 from '../Components/Common/CTA2';
+import time from '../Assets/time.png';
+import money from '../Assets/money.png';
+import effort from '../Assets/effort.png';
 import './Home.css';
 // import { Helmet } from 'react-helmet';
 
@@ -42,6 +50,21 @@ const Home = () => {
         </div>
     </section>
 
+    <ScrollStack useWindowScroll={true} >
+      <H2 title='Why Choose EZ-SAVER ?'/>
+  <ScrollStackItem>
+    <StackCard  img={time}  title="Save Time" text='Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds.' url="/Category/UI_UX_Design"/>
+  </ScrollStackItem>
+  
+  <ScrollStackItem>
+    <StackCard img={effort} title='Save Effort' text='Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds.'/>
+  </ScrollStackItem>
+
+  <ScrollStackItem>
+    <StackCard  img={money}  title="Save Money" text='Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds.' url="/Category/Web_Design"/>
+  </ScrollStackItem>
+
+</ScrollStack>
 
     </div>);
 }

@@ -21,13 +21,14 @@
 .custom-scroll-text{
     font-family: var(--font_1);
     color: var(--accent_color);
-    z-index: -2;
 }
 
 .velocity_section{
     width: 100%;
     position: relative;
     overflow: hidden;
+    z-index: -9;
+    margin-top: -70px;
 }
 
 /* .custom-scroll-text2{
