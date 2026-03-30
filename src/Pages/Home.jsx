@@ -22,22 +22,26 @@ const Home = () => {
            <h1 className='hero_h'>Experince Grocerry Shopping Like Never Before</h1>
            <CTA2 url='*' title='Know More'/>
         </div>
+    </section>
         <div className='hero_imgs'>
            <img className='hero_img' src={hero} alt="ez-saver hero" />
-           <img className='speed_img' src={speed} alt="ez-saver hero" />
+           {/* <img className='speed_img' src={speed} alt="ez-saver hero" /> */}
         </div>
-    </section>
    
     <ScrollVelocity
   texts={['Shopping Made Eazy.', 'Shopping Made Fast.']} 
   velocity={80}
   className="custom-scroll-text"
 />
-    {/* <ScrollVelocity
-  texts={['Shopping Made Fast.']} 
-  velocity={80}
-  className="custom-scroll-text2" */}
-/>
+
+    <section className='about_section'>
+        <div className='about_div'>
+            <h2 className='about_h'>About EZ-SAVER</h2>
+            <p className='about_p'>Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. </p>
+           <CTA2 url='*' title='Know More'/>
+        </div>
+    </section>
+
 
     </div>);
 }

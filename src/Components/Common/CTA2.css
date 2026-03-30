@@ -8,6 +8,7 @@ padding: 0;
 text-decoration: none;
 }
 .cta_div2:hover{
+    padding: 3px;
     border-radius: 8px;
     border: 3.5px dashed var(--accent_color);
 }
@@ -29,4 +30,5 @@ background-color: var(--accent_color);
 }
 .cta_temp2:hover{
 border-radius: 4px;
+padding: 10px;
 }
