@@ -30,7 +30,7 @@
     align-items: center;
     flex-shrink: 0;
     border-radius: 8px;
-    border: 3px solid var(--Royal-Azure, #2952D8);
+    border: 3px solid var(--secondry_color);
 }
 .lang{
     font-family: var(--font_2);
