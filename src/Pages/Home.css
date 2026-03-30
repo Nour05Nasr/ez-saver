@@ -1,0 +1,22 @@
+@import url('https://fonts.cdnfonts.com/css/azonix');
+:root{
+    --h1: 4vw;
+    --h2: 2.2vw;
+    --h3: 1.8vw;
+    --p: 1.4vw;
+    --font_1: 'Azonix', sans-serif;
+    --font_2: 'Poppins', sans-serif;
+    --main_color: #121180;
+    --primary_color: #F9F9F9;
+    --secondry_color: #2952D8;
+    --accent_color: #FA921C;
+  }
+
+  body{
+    margin: 0 10%;
+    padding: 0;
+    background-color: #150633;
+  }
+  .body_home{
+
+  }

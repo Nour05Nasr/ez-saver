@@ -1,0 +1,21 @@
+.cta_div2{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+
+.cta_temp2{
+width: 200px;
+height: 20%;
+text-align: center;
+font-family: var(--font_2);
+font-size: 20px;
+background-color: var(--accent_color);
+border-radius: 8PX;
+text-decoration: none;
+color: var(--primary_color);
+}
