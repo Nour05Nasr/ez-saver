@@ -1,0 +1,90 @@
+.flex_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.marg{
+    padding-top: 4%;
+    /* padding-bottom: 10%; */
+}
+
+.component-title {
+  color: #a855f7;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.card-outer {
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.panel {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: clip-path 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- Blue Panel --- */
+.blue-panel {
+  background: linear-gradient(135deg, #3262ef, #1e3bb3);
+  left: 0;
+  /* Initial shape: Covers more than half with a curve */
+  /* clip-path: polygon(0% 0%, 75% 0%, 55% 100%, 0% 100%); */  clip-path: polygon(0 0, 30% 0, 60% 100%, 0 100%, 0% 50%);
+  clip-path: polygon(0 0, 36% 0, 61% 100%, 0 100%, 0% 50%);
+
+  z-index: 1;
+}
+
+/* --- Orange Panel --- */
+.orange-panel {
+  background: linear-gradient(135deg, #f9a132, #f37321);
+  right: 0;
+  /* Initial shape: Overlaps the blue slightly */
+  clip-path: polygon(36% 0%, 100% 0%, 100% 100%, 61% 100%);
+  z-index: 2;
+}
+
+/* --- HOVER STATE: The "Parting" Animation --- */
+
+/* Blue pulls away to the left */
+.card-outer:hover .blue-panel {
+  /* clip-path: polygon(0% 0%, 60% 0%, 35% 100%, 0% 100%); */
+  clip-path: polygon(0 0, 34% 0, 58% 100%, 0 100%, 0% 50%);
+}
+
+/* Orange pulls away to the right */
+.card-outer:hover .orange-panel {
+  clip-path: polygon(38% 0%, 100% 0%, 100% 100%, 63% 100%);
+}
+
+/* --- Text & Buttons --- */
+.text-box {
+  position: absolute;
+  width: 40%;
+  color: white;
+  padding: 40px;
+}
+
+.left-text { left: 0;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.right-text { right: 0; 
+  text-align: right;
+    width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+ }
