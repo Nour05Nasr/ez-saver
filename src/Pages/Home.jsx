@@ -18,7 +18,7 @@ import effort from '../Assets/effort.png';
 import blue from '../Assets/blue.svg';
 import orange from '../Assets/orange.svg';
 import bg from '../Assets/bg.svg';
-// import LogoLoop from '../Components/Layout/LogoLoop'
+import LogoLoop from '../Components/Layout/LogoLoop'
 import Faq from '../Components/Layout/Faq'
 import DomeGallery from '../Components/Layout/DomeGallery';
 import './Home.css';
@@ -79,7 +79,7 @@ const Home = () => {
           <H2 title='How It Works ?'/>
   </section>
 
-  {/* <LogoLoop /> */}
+  <LogoLoop />
 
   <Faq />
 
