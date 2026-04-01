@@ -6,20 +6,13 @@
 }
 
 .marg{
-    padding-top: 4%;
-    /* padding-bottom: 10%; */
-}
-
-.component-title {
-  color: #a855f7;
-  font-size: 18px;
-  margin-bottom: 20px;
+  padding: 6% 0;
 }
 
 .card-outer {
   position: relative;
-  width: 1000px;
-  height: 500px;
+  width: 1260px;
+  height: 600px;
   border-radius: 40px;
   overflow: hidden;
 }

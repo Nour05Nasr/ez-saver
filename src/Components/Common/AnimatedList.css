@@ -1,0 +1,54 @@
+.scroll-list-container {
+  position: relative;
+  width: 658gpx;
+}
+
+.scroll-list {
+  max-height: 650px;
+  overflow-y: auto;
+  /* padding: 16px; */
+  /* background-color: aqua; */
+}
+
+.scroll-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scroll-list::-webkit-scrollbar-track {
+  /* background: #060010; */
+}
+
+.scroll-list::-webkit-scrollbar-thumb {
+  /* background: #271e37; */
+  border-radius: 4px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.item {
+  padding: 22px 16px;
+  background-color: var(--primaryy_color);
+  /* background-color: var(--secondry_color); */
+  /* border-radius: 8px; */
+  margin-bottom: 1rem;
+  border-bottom: 3.5px dashed  var(--accent_color);
+
+}
+
+.item.selected {
+  background-color: var(--accent_color);
+}
+
+.item-text {
+  margin: 0;
+  font-family: var(--font_1);
+  font-size: var(--h4);
+  color: var(--main_color);
+}

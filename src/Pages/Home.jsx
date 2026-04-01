@@ -17,8 +17,9 @@ import money from '../Assets/money.png';
 import effort from '../Assets/effort.png';
 import blue from '../Assets/blue.svg';
 import orange from '../Assets/orange.svg';
+import bg from '../Assets/bg.svg';
+import Faq from '../Components/Layout/Faq'
 import './Home.css';
-// import { Helmet } from 'react-helmet';
 
 const Home = () => {
     return ( <div className='body_home'>
@@ -70,28 +71,13 @@ const Home = () => {
   </ScrollStackItem>
   </ScrollStack>
 
-  {/* <section className='foffer_sectionx'>
-    <div className='offer_div'>
-        <div className='offer_content1'>
-            <h2 className='about_h'>About EZ-SAVER</h2>
-            <p className='about_p'>Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. </p>
-           <CTA2 url='*' title='Know More'/>
-        </div>
-    <img src={blue} alt="" />
-    </div>
-
-    <div className='offer_div2'>
-        <div className='offer_content2'>
-            <h2 className='about_h'>About EZ-SAVER</h2>
-            <p className='about_p'>Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. </p>
-           <CTA1 url='*' title='Know More'/>
-        </div>
-    <img src={orange} alt="" />
-    </div>
-  </section> */}
-
   <DuoCard />
 
+  <section className='bg_section'>
+          <H2 title='How It Works ?'/>
+  </section>
+
+  <Faq />
 
     </div>);
 }
