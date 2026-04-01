@@ -18,7 +18,9 @@ import effort from '../Assets/effort.png';
 import blue from '../Assets/blue.svg';
 import orange from '../Assets/orange.svg';
 import bg from '../Assets/bg.svg';
+// import LogoLoop from '../Components/Layout/LogoLoop'
 import Faq from '../Components/Layout/Faq'
+import DomeGallery from '../Components/Layout/DomeGallery';
 import './Home.css';
 
 const Home = () => {
@@ -77,8 +79,25 @@ const Home = () => {
           <H2 title='How It Works ?'/>
   </section>
 
+  {/* <LogoLoop /> */}
+
   <Faq />
 
+    <div className='flex_column' style={{ width: '100%', height: '100vh' }}>
+                    <H2 title='Our Users & Partners Testimonials'/>
+      <DomeGallery
+  fit={0.8}
+  minRadius={600}
+  maxVerticalRotationDeg={0}
+  segments={28}
+  dragDampening={1.2}
+  grayscale={false}
+/>
+    </div>
+{/* export default function App() {
+  return (
+  );
+} */}
     </div>);
 }
 export default Home;
