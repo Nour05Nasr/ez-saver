@@ -28,17 +28,23 @@
 /* --- Blue Panel --- */
 .blue-panel {
   background: linear-gradient(135deg, #3262ef, #1e3bb3);
-  left: 0;
-  /* Initial shape: Covers more than half with a curve */
-  /* clip-path: polygon(0% 0%, 75% 0%, 55% 100%, 0% 100%); */  clip-path: polygon(0 0, 30% 0, 60% 100%, 0 100%, 0% 50%);
-  clip-path: polygon(0 0, 36% 0, 61% 100%, 0 100%, 0% 50%);
-
-  z-index: 1;
-}
-
-/* --- Orange Panel --- */
-.orange-panel {
-  background: linear-gradient(135deg, #f9a132, #f37321);
+  background-image: url(../../Assets/blue_card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    /* Initial shape: Covers more than half with a curve */
+    /* clip-path: polygon(0% 0%, 75% 0%, 55% 100%, 0% 100%); */  clip-path: polygon(0 0, 30% 0, 60% 100%, 0 100%, 0% 50%);
+    clip-path: polygon(0 0, 36% 0, 61% 100%, 0 100%, 0% 50%);
+    
+    z-index: 1;
+  }
+  
+  /* --- Orange Panel --- */
+  .orange-panel {
+    background: linear-gradient(135deg, #f9a132, #f37321);
+  background-image: url(../../Assets/orange_card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   right: 0;
   /* Initial shape: Overlaps the blue slightly */
   clip-path: polygon(36% 0%, 100% 0%, 100% 100%, 61% 100%);

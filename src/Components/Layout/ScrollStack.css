@@ -5,8 +5,8 @@
   overflow: visible;
   overflow-x: visible;
   overscroll-behavior: auto;
-  /* -webkit-overflow-scrolling: touch; */
-  /* scroll-behavior: smooth; */
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   will-change: scroll-position;

@@ -1,18 +1,18 @@
-.flex{
-    display: flex;
-    justify-content: center;
-    align-items: start;
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
-.div_temp1{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    /* gap: 3vh; */
-    margin: 0 4%;
-    /* background-color: #54F1E9; */
+ 
+.div_temp1 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 0 4%;
 }
-.stack_img{
-    width: 28%;
+ 
+.stack_img {
+  width: 28%;
 }

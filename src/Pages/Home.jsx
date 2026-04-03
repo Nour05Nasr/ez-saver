@@ -4,7 +4,6 @@ import ScrollStack from '../Components/Layout/ScrollStack';
 import ScrollStackItem from '../Components/Common/ScrollStackItem';
 import Nav from '../Components/Layout/Nav';
 import ScrollVelocity from '../Components/Layout/ScrollVelocity';
-import DualCard from '../Components/Layout/DualCard';
 import DuoCard from '../Components/Layout/DuoCard';
 import StackCard from '../Components/Common/StackCard';
 import hero from '../Assets/hero.svg';
@@ -19,6 +18,7 @@ import blue from '../Assets/blue.svg';
 import orange from '../Assets/orange.svg';
 import bg from '../Assets/bg.svg';
 import LogoLoop from '../Components/Layout/LogoLoop'
+import ScrollAnimation from '../Components/Layout/ScrollAnimation'
 import Faq from '../Components/Layout/Faq'
 import Footer from '../Components/Layout/Footer'
 import DomeGallery from '../Components/Layout/DomeGallery';
@@ -41,6 +41,7 @@ const Home = () => {
         </div>
     </section>
         <div className='hero_imgs'>
+            {/* <div class="sketchfab-embed-wrapper"> <iframe title="Smart Shopping Cart"  allow="autoplay; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="500" height="600" src="https://sketchfab.com/models/4aca91a9135f4af59ef614b32bc69755/embed?autostart=1&transparent=1"> </iframe> </div> */}
            <img className='hero_img' src={hero} alt="ez-saver hero" />
            {/* <img className='speed_img' src={speed} alt="ez-saver hero" /> */}
         </div>
@@ -77,7 +78,8 @@ const Home = () => {
   <DuoCard />
 
   <section className='bg_section flex_column'>
-          <H2 title='How It Works ?'/>
+          <h4 className="scroll_h" >How It Works ?</h4>
+          <ScrollAnimation />
   </section>
 
   <LogoLoop />
@@ -87,7 +89,7 @@ const Home = () => {
     <div className='flex_column' style={{ width: '100%', height: '100vh' }}>
                     <H2 title='Our Users & Partners Testimonials'/>
       <DomeGallery
-  fit={0.8}
+  fit={0.6}
   minRadius={600}
   maxVerticalRotationDeg={0}
   segments={28}

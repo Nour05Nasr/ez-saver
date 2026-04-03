@@ -124,8 +124,26 @@
 }
 .bg_section{
   width: 100%;
-  height: 1621px;
+  /* height: 1628px; */
     background-image: url(./../Assets/bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+.scroll_h{
+  /* margin-top: 12%; */
+    font-family: var(--font_1);
+    font-size: var(--h2);
+    color: var(--primary_color);
+}
+.model{
+  font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;
+}
+.model2{
+  font-weight: bold; color: #1CAAD9;
+}
+.model3{
+  font-weight: bold; color: #1CAAD9;
+}
+.model4{
+  font-weight: bold; color: #1CAAD9;
 }
