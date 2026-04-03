@@ -196,3 +196,36 @@ main.sphere-main {
 .edge-fade--bottom {
   bottom: 0;
 }
+.testimonial-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.testimonial-text {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.testimonial-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.testimonial-rating {
+  font-size: 14px;
+  color: gold;
+}

@@ -20,6 +20,7 @@ import orange from '../Assets/orange.svg';
 import bg from '../Assets/bg.svg';
 import LogoLoop from '../Components/Layout/LogoLoop'
 import Faq from '../Components/Layout/Faq'
+import Footer from '../Components/Layout/Footer'
 import DomeGallery from '../Components/Layout/DomeGallery';
 import './Home.css';
 
@@ -75,7 +76,7 @@ const Home = () => {
 
   <DuoCard />
 
-  <section className='bg_section'>
+  <section className='bg_section flex_column'>
           <H2 title='How It Works ?'/>
   </section>
 
@@ -94,6 +95,8 @@ const Home = () => {
   grayscale={false}
 />
     </div>
+
+<Footer />
 {/* export default function App() {
   return (
   );

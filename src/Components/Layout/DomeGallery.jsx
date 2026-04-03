@@ -1,6 +1,38 @@
-import { useEffect, useMemo, useRef, useCallback } from 'react';
+import {useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { useGesture } from '@use-gesture/react';
+import { supabase } from '../../Supabase';
 import './DomeGallery.css';
+
+// useEffect(() => {
+//   async function callProjects() {
+//     const { data, error } = await supabase.from("Projects").select("*").eq("id", id).single();
+
+//     if (!error) {
+//       setProjects(data);
+//       setLoading(false);
+//     }
+//   }
+
+              // const [loading, setLoading] = useState(true);
+            
+            // const {id} = useParams();
+            // const [Projects, setProjects] = useState([]); 
+            // const [Tools, setTools] = useState([]); 
+            // const [Title, setTitle] = useState(""); 
+
+// const [testimonials, setTestimonials] = useState([""]);
+
+// useEffect(()=> {
+//   const getTestimonials = async()=>{
+//     const res = await supabase.from("testimonials").select("*")
+//     console.log(res)
+//     setTestimonials(res.data);
+
+//   }
+//   getTestimonials();
+// },[])
+
+// if (loading) return <p>Loading...</p>;
 
 const DEFAULT_IMAGES = [
   {
@@ -591,6 +623,7 @@ export default function DomeGallery({
   }, []);
 
   return (
+
     <div
       ref={rootRef}
       className="sphere-root"

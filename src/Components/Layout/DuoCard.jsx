@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import CTA1 from '../Common/CTA1';
 import CTA2 from '../Common/CTA2';
 import H2 from '../Common/H2';
+import { supabase } from '../../Supabase';
 import './DuoCard.css';
+
 
 const DuoCard = () => {
   return (

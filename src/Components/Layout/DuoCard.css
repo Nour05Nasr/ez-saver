@@ -50,12 +50,12 @@
 /* Blue pulls away to the left */
 .card-outer:hover .blue-panel {
   /* clip-path: polygon(0% 0%, 60% 0%, 35% 100%, 0% 100%); */
-  clip-path: polygon(0 0, 34% 0, 58% 100%, 0 100%, 0% 50%);
+  clip-path: polygon(0 0, 38% 0, 55% 100%, 0 100%, 0% 50%);
 }
 
 /* Orange pulls away to the right */
 .card-outer:hover .orange-panel {
-  clip-path: polygon(38% 0%, 100% 0%, 100% 100%, 63% 100%);
+  clip-path: polygon(42% 0%, 100% 0%, 100% 100%, 59% 100%);
 }
 
 /* --- Text & Buttons --- */
