@@ -1,0 +1,18 @@
+.mask2{
+    background-image: url(../../Assets/mask2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: aqua; */
+    width: 1521px;
+    height: 145vh;
+}
+/* .element {
+    background-image: url(../../Assets/policy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  mask: url(#myMaskID);
+} */
+.mask2_h{
+    margin: 52% 0 0 64%;
+    color: var(--main_color);
+}

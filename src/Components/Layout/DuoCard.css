@@ -6,13 +6,13 @@
 }
 
 .marg{
-  padding: 6% 0;
+  padding: 3% 0;
 }
 
 .card-outer {
   position: relative;
   width: 1260px;
-  height: 600px;
+  height: 450px;
   border-radius: 40px;
   overflow: hidden;
 }
@@ -27,6 +27,9 @@
 
 /* --- Blue Panel --- */
 .blue-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(135deg, #3262ef, #1e3bb3);
   background-image: url(../../Assets/blue_card.svg);
     background-repeat: no-repeat;
@@ -41,6 +44,9 @@
   
   /* --- Orange Panel --- */
   .orange-panel {
+        display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(135deg, #f9a132, #f37321);
   background-image: url(../../Assets/orange_card.svg);
     background-repeat: no-repeat;

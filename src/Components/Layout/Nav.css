@@ -6,6 +6,7 @@
     gap: 16px;
     padding: 16px 0;
     position: absolute;
+    position: fixed;
     top: 0;
     z-index: 99;
     /* background-color: rgb(157, 21, 114); */

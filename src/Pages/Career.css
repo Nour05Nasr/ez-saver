@@ -1,0 +1,14 @@
+.about_career{
+    width: 100%;
+    margin: 8% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.career_img{
+    width: 36%;
+    right: 10%;
+    float: right;
+    position: absolute;
+    z-index: 2;
+}

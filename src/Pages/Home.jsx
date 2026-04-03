@@ -40,7 +40,7 @@ const Home = () => {
     <section className='hero'>
         <div className='hero_text'>
            <h1 className='hero_h'>Experince Grocerry Shopping Like Never Before</h1>
-           <CTA2 url='*' title='Know More'/>
+           <CTA2 url='/about' title='Know More'/>
         </div>
     </section>
         <div className='hero_imgs'>
@@ -76,7 +76,7 @@ const Home = () => {
         <div className='about_div'>
             <h2 className='about_h'>About EZ-SAVER</h2>
             <p className='about_p'>Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. </p>
-           <CTA2 url='*' title='Know More'/>
+           <CTA2 url='/about' title='Know More'/>
         </div>
     </section>
 
@@ -95,14 +95,21 @@ const Home = () => {
   </ScrollStackItem>
   </ScrollStack>
 
-  <DuoCard />
+<div className='flex_column'>
+   <H2 title='What EZ-SAVER Offers?'/>
+
+  <DuoCard title1='For Retailers' text1='Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds.' 
+  title2='For Shoppers' text2='Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds.'/>
+</div>
 
   <section className='bg_section flex_column'>
           <h4 className="scroll_h" >How It Works ?</h4>
           <ScrollAnimation />
   </section>
 
-  <LogoLoop />
+
+    <H2 title='Our Partners' />
+    <LogoLoop />
 
   <Faq />
 

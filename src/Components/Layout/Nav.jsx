@@ -12,11 +12,11 @@ const Nav = (props) => {
                 <Link className='nav_logo' to='/'>
                     <img src={logo} alt="EZ-SAVER Logo"/>
                 </Link>
-                <NavLi url='/' title='About'/>
-                <NavLi url='/' title='Services'/>
-                <NavLi url='/' title='Blogs'/>
-                <NavLi url='/' title='Careers'/>
-                <NavLi url='/' title='Contact'/>
+                <NavLi url='/about' title='About'/>
+                <NavLi url='/services' title='Services'/>
+                <NavLi url='/blogs' title='Blogs'/>
+                <NavLi url='/career' title='Careers'/>
+                <NavLi url='/contact' title='Contact'/>
                 <div className='lang_div'>
                 <p className='lang'>AR</p>
                 </div>

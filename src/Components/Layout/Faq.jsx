@@ -7,7 +7,7 @@ import './Faq.css';
 
 const Faq = () => {
     return ( <section className='faq'>
-            <H2 title='FAQ'/>
+            <H2 title='FFrequently Asked Questions'/>
         <div className='faq_section'>
         <AnimatedList
   items={items}

@@ -9,7 +9,7 @@ import './Policy.css';
 const Policy = () => {
     return ( <div className='body_home'>
         <Nav />
-        <Mask1 />
+        <Mask1 title='EZ-Saver Policy'/>
         {/* <img id='myMasID' src={mask_1} alt="" /> */}
 
         {/* <div className='flex_column'> */}

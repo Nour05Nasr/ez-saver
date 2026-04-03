@@ -141,6 +141,7 @@
 .bg_section{
   width: 100%;
   /* height: 1628px; */
+  margin: 6% 0 0 0;
     background-image: url(./../Assets/bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
