@@ -48,8 +48,8 @@ const Footer = () => {
                                         </ul>
                                         <ul>
                                             <li className='footer_menu_p'>Services</li>
-                                            <li><a href="#">Shoppers</a></li>
-                                            <li><a href="#">Retailers</a></li>
+                                            <li><a href="#">For Shoppers</a></li>
+                                            <li><a href="#">For Retailers</a></li>
                                         </ul>
                                         <ul>
                                             <li className='footer_menu_p'>Blogs</li>
@@ -66,6 +66,7 @@ const Footer = () => {
                                             <li><a href="#">Request Demo</a></li>
                                             <li><a href="#">Contact Info</a></li>
                                             <li><a href="#">Business Hours</a></li>
+                                            <li><a href="/policy">Privacy Policy</a></li>
                                         </ul>
                                     </div>
                                         <div class="copyright-text">
