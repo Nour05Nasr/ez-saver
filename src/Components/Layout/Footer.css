@@ -71,7 +71,7 @@
   margin-bottom: 2px;
 }
 .cta-text span {
-  color: #757575;
+  color: var(--accent_color);
   font-size: 15px;
 }
 .footer-content {
@@ -97,7 +97,7 @@
 .footer-text p {
   margin-bottom: 14px;
   font-size: 14px;
-  color: #7e7e7e;
+  color: var(--accent_color);
   line-height: 28px;
 }
 .footer-social-icon span {
@@ -151,7 +151,7 @@
     padding-inline-start: 0 !important; */
 }
 .footer-widget ul li a:hover{
-  color: var(--accent-color) !important;
+  color: var(--accent_color) !important;
   text-decoration: none;
 }
 .footer-widget ul li a {
@@ -198,6 +198,9 @@ background: linear-gradient(90deg, #E57D02 5.29%, #FA921C 76.92%, #FFA931 100%);
     border: 1px solid var(--secondry-color);
     /* top: 0; */
 }
+/* .subscribe-form:hover button {
+background-color: --var(accent_color);
+} */
 .subscribe-form button i {
   color: var(--main-color);
   font-size: 22px;

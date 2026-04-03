@@ -68,14 +68,30 @@
     z-index: 2;
     /* background-color: aquamarine; */
   }
+  @keyframes slideInLeft {
+  from {
+    transform: translateX(-100vw);
+    opacity: 0; /* Optional: fade in simultaneously */
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+};
   .hero_img{
     top: 0;
     left: 0;
     z-index: 1;
-      left: -10%;
-  width: 40vw;
-  max-width: 600px;
+    left: -10%;
+    width: 40vw;
+    max-width: 600px;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-out;
+      animation: slideInLeft 1s ease-out forwards;
   }
+  .hero_img.is-visible {
+  transform: translateX(0);
+}
   /* .speed_img{
     margin-top: -500%;
     left: 0;

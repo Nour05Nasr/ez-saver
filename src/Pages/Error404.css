@@ -1,0 +1,45 @@
+.error_section{
+     background-image: url(../Assets/error.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 1100px; */
+    position: relative;
+      /* padding: 0 2% 0; */
+}
+.error_container{
+        display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    padding-top: 16%;
+    margin: 0;
+}
+.error_div{
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 4% 16%;
+}
+.error_h{
+      font-family: var(--font_1);
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0;
+    text-align: center;
+    color: var(--primary_color);
+}
+.error_p{
+      width: 80%;
+  font-family: var(--font_2);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    margin: 1% 0 8%;
+    color: var(--primary_color);
+}

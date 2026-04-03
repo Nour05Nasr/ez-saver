@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import '@google/model-viewer';
+import ModelViewer from '../Components/Layout/ModelViewer';
 // import ScrollStack, { ScrollStackItem } from '../Components/Layout/ScrollStack'
 import ScrollStack from '../Components/Layout/ScrollStack';
 import ScrollStackItem from '../Components/Common/ScrollStackItem';
@@ -7,7 +9,7 @@ import ScrollVelocity from '../Components/Layout/ScrollVelocity';
 import DuoCard from '../Components/Layout/DuoCard';
 import StackCard from '../Components/Common/StackCard';
 import hero from '../Assets/hero.svg';
-// import speed from '../Assets/speed.png';
+import hero_cart from '../Assets/hero_cart.png';
 import H2 from '../Components/Common/H2';
 import CTA1 from '../Components/Common/CTA1';
 import CTA2 from '../Components/Common/CTA2';
@@ -17,6 +19,7 @@ import effort from '../Assets/effort.png';
 import blue from '../Assets/blue.svg';
 import orange from '../Assets/orange.svg';
 import bg from '../Assets/bg.svg';
+import object_0 from '../Assets/object_0.glb';
 import LogoLoop from '../Components/Layout/LogoLoop'
 import ScrollAnimation from '../Components/Layout/ScrollAnimation'
 import Faq from '../Components/Layout/Faq'
@@ -41,8 +44,25 @@ const Home = () => {
         </div>
     </section>
         <div className='hero_imgs'>
+
+{/* <ModelViewer
+  url={object_0}
+  width={600}
+  height={600}
+  modelXOffset={-0.5}
+  modelYOffset={-0.6}
+  enableMouseParallax
+  enableHoverRotation
+  environmentPreset="city"
+  fadeIn
+  autoRotate={false}
+  autoRotateSpeed={0.35}
+  showScreenshotButton={false}
+/> */}
+            {/* <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/{{MODELVIEWER_VERSION}}/model-viewer.min.js"></script> */}
             {/* <div class="sketchfab-embed-wrapper"> <iframe title="Smart Shopping Cart"  allow="autoplay; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="500" height="600" src="https://sketchfab.com/models/4aca91a9135f4af59ef614b32bc69755/embed?autostart=1&transparent=1"> </iframe> </div> */}
-           <img className='hero_img' src={hero} alt="ez-saver hero" />
+           {/* <img className='hero_img' src={hero} alt="ez-saver hero" /> */}
+           <img className='hero_img' src={hero_cart} alt="ez-saver hero" />
            {/* <img className='speed_img' src={speed} alt="ez-saver hero" /> */}
         </div>
    
