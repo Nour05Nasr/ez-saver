@@ -10,6 +10,7 @@ import DuoCard from '../Components/Layout/DuoCard';
 import StackCard from '../Components/Common/StackCard';
 import hero from '../Assets/hero.svg';
 import hero_cart from '../Assets/hero_cart.png';
+import AboutCard from '../Components/Layout/AboutCard'
 import H2 from '../Components/Common/H2';
 import CTA1 from '../Components/Common/CTA1';
 import CTA2 from '../Components/Common/CTA2';
@@ -72,13 +73,7 @@ const Home = () => {
   className="custom-scroll-text"
 />
 
-    <section className='about_section'>
-        <div className='about_div'>
-            <h2 className='about_h'>About EZ-SAVER</h2>
-            <p className='about_p'>Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. </p>
-           <CTA2 url='/about' title='Know More'/>
-        </div>
-    </section>
+<AboutCard />
 
     <ScrollStack useWindowScroll={true} >
       <H2 title='Why Choose EZ-SAVER ?'/>
