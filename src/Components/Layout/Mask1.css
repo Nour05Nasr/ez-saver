@@ -1,10 +1,11 @@
 .mask1{
-    background-image: url(../../Assets/mask1.png);
+    width: 1521px;
+    height: 145vh;
+    /* clip-path: url(../../Assets/mask_1.svg); */
+    background-image: url(../../Assets/policy_mask.png);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-color: aqua; */
-    width: 1521px;
-    height: 145vh;
 }
 /* .element {
     background-image: url(../../Assets/policy.png);

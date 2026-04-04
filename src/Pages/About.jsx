@@ -8,7 +8,7 @@ import ScrollVelocity from '../Components/Layout/ScrollVelocity';
 import './About.css';
 
 const About = () => {
-    return ( <div className='body_home'>
+    return ( <div className='body_home body_bg'>
         <Nav />
         <Mask2 title='About EZ-Saver'/>
 

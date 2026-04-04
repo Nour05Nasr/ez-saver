@@ -1,6 +1,13 @@
 .about_card{
 
 }
+.body_bg{
+    /* mix-blend-mode: lighten; */
+    /* opacity: 6%; */
+    background-image: url(./../Assets/lll.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .arrow_p{
     width: 74%;
     font-family: var(--font_2);
