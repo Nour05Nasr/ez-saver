@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Nav from '../Components/Layout/Nav';
 import TextCard from '../Components/Common/TextCard';
-import Mask1 from '../Components/Layout/Mask1';
 import Footer from '../Components/Layout/Footer';
 import mask_1 from '../Assets/mask_1.svg';
 import './Policy.css';
@@ -9,7 +8,9 @@ import './Policy.css';
 const Policy = () => {
     return ( <div className='body_home'>
         <Nav />
-        <Mask1 title='EZ-Saver Policy'/>
+        <div className='mask_policy'>
+            <h2 className='mask_policy_h'>EZ-SAVER Policy</h2>
+        </div>
         {/* <img id='myMasID' src={mask_1} alt="" /> */}
 
         {/* <div className='flex_column'> */}

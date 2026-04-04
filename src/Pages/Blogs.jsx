@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import Nav from '../Components/Layout/Nav';
-import Mask1 from '../Components/Layout/Mask1';
+// import Mask1 from '../Components/Layout/Mask1';
 import TextImgCard from '../Components/Common/TextImgCard';
 import Footer from '../Components/Layout/Footer';
 import blogs_img from '../Assets/blogs_img.png';
