@@ -1,16 +1,17 @@
 .contact_info{
-    width: 52%;
+    width: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
     gap: 6%;
     margin: 2% 0;
+    /* background-color: aqua; */
 }
 .contact_icon{
     display: flex;
-width: 50px;
-height: 50px;
-padding: 1.5%;
+width: 48px;
+height: 48px;
+padding: 2%;
 justify-content: center;
 align-items: center;
 border-radius: 16px;
@@ -18,11 +19,14 @@ background: var(--Deep-Saffron, #FA921C);
 }
 .icon_h{
     margin: 0;
-    font-family: var(--font_1);
+    font-family: var(--font_2);
     color: var(--main_color);
+    font-weight: bold;
+    font-size: 16px;
 }
 .icon_p{
     margin: 0;
+    font-size: 18px;
     font-family: var(--font_2);
     color: var(--main_color);
 }

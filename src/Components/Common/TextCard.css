@@ -10,7 +10,7 @@ gap: 8px;
 /* align-self: stretch; */
 border-radius: 17.83px;
 border: 2.983px solid #E5E7EB;
-background: #F9F9F9;
+background: var(--primary_color);
 }
 .mask_h{
 color: var(--main_color);

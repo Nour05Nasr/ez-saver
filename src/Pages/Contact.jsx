@@ -17,41 +17,43 @@ const Contact = () => {
             <h2 className='mask_contact_h'>Reach Out To Us</h2>
         </div>
 
-        <section className='flex contact_section'>
-            <div className='flex_column w'>
+        <section className='contact_section'>
+            <div className='column_start w'>
                         <h5 className='mask_h'>Get in Touch</h5>                  
-                            <div className='input_inner'>
+                            <div className='input_inner top'>
                               <p className='icon_h'>Full Name</p>
-                              <input className='input_div' type='text' placeholder='Enter your e-mail address' />
+                              <input className='input_div top' type='text' placeholder='Enter your e-mail address' />
                             </div>
-                            <div className='input_inner'>
+                            <div className='input_inner top'>
                               <p className='icon_h'>Email</p>
-                              <input className='input_div' type='text' placeholder='Enter your e-mail address' />
+                              <input className='input_div top' type='text' placeholder='Enter your full name' />
                             </div>
-                            <div className='input_inner'>
+                            <div className='input_inner top'>
                               <p className='icon_h'>Number</p>
-                              <input className='input_div' type='text' placeholder='Enter your e-mail address' />
+                              <input className='input_div top' type='text' placeholder='Enter your phone number' />
                             </div>
-                            <div className='input_inner'>
+                            <div className='input_inner top'>
                               <p className='icon_h'>Company/Store</p>
-                              <input className='input_div' type='text' placeholder='Enter your e-mail address' />
+                              <input className='input_div top' type='text' placeholder='Enter your e-mail address' />
                             </div>
-                            <div className='input_inner'>
+                            <div className='input_inner top'>
                               <p className='icon_h'>Message</p>
-                              <input className='input_div' type='text' placeholder='Enter your e-mail address' />
+                              <input className='input_div2 top' type='text' placeholder='Enter your message' />
                             </div>
-                            <div className='contact_section'>
 
+                            <div className='flex top2'>
                         <CTA2 url='/' title='Send'/>
                             </div>
             </div>
-            <div className='flex_column'>
+            <div className='column_start w'>
                         <h5 className='mask_h'>Contact Information</h5>
+                        <div className='top column_start'>
                 <ContactInfo icon={email} title='Email' info='hello@ez-saver.com'/>
                 <ContactInfo icon={phone} title='Phone' info='+20 123 456 7890'/>
                 <ContactInfo icon={location} title='Office' info='Cairo, Egypt'/>
+                        </div>
 
-                <TextCard title='Why Partner with EZ-saver' 
+                <TextCard title='Why Partner with EZ-saver ?' 
                 text='Increase customer satisfaction and loyalty 
                 Reduce checkout lines and wait times
                 Gain valuable shopping insights and analytics
