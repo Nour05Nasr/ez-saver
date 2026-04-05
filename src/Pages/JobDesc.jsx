@@ -3,6 +3,7 @@ import Nav from '../Components/Layout/Nav';
 import Mask3 from '../Components/Layout/Mask3';
 import Footer from '../Components/Layout/Footer';
 import CTA2 from '../Components/Common/CTA2';
+import TextCard from '../Components/Common/TextCard';
 import './JobDesc.css';
 
 const JobDesc = () => {

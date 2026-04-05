@@ -6,6 +6,8 @@ import About from './Pages/About';
 import Contact from './Pages/Contact';
 import Services from './Pages/Services.jsx';
 import Career from './Pages/Career';
+import JobDesc from './Pages/JobDesc';
+import JobApp from './Pages/JobApp.jsx';
 import Blogs from './Pages/Blogs';
 import Error404 from './Pages/Error404';
 
@@ -20,6 +22,8 @@ const RoutingApp = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/career/JobDesc" element={<JobDesc />} />
+        <Route path="/career/JobApp" element={<JobApp />} />
         <Route path="/blogs" element={<Blogs />} />
 
         <Route path="*" element={<Error404 />} />

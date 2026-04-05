@@ -1,31 +1,28 @@
 import React, { Component } from 'react';
 import Nav from '../Components/Layout/Nav';
-import TextCard from '../Components/Common/TextCard';
 import HoursCard from '../Components/Common/HoursCard';
 import WhyCard from '../Components/Common/WhyCard';
 import Form from '../Components/Layout/Form';
 import ContactInfo from '../Components/Common/ContactInfo';
-import Input from '../Components/Common/Input';
+import Mask3 from '../Components/Layout/Mask3';
 import Footer from '../Components/Layout/Footer';
 import email from '../Assets/email.svg';
 import phone from '../Assets/phone.svg';
 import location from '../Assets/location.svg';
-import './Contact.css';
+import './JobApp.css';
 
-const Contact = () => {
+const JobApplication = () => {
     return ( <div className='body_home'>
         <Nav />
-        <div className='mask_contact'>
-            <h2 className='mask_contact_h'>Reach Out To Us</h2>
-        </div>
+        <Mask3 title='Job Application'/>
 
         <section className='contact_section'>
-          <Form headline='Get in Touch'
+          <Form headline='Application Form'
           title1='Full Name' text1='Enter your full name'
           title2='Email' text2='Enter your e-mail address'
           title3='Number' text3='Enter your phone number'
-          title4='Company/Store' text4='Enter your company/store name'
-          title5='Message' text5='Enter your message'
+          title4='Expected Salary' text4='Enter your expected salary'
+          title5='Resume/cv' text5='Upload your resume/cv'
           />
 
             <div className='column_start w'>
@@ -53,4 +50,4 @@ const Contact = () => {
     </div> );
 }
  
-export default Contact;
+export default JobApplication;
