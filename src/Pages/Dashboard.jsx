@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
+import SideNav from '../Components/SideNav';
+
 import './Dashboard.css';
 
 const Dashboard = () => {
-    return (<div className=''>
-        <h1 className='dash_h'>Welcome Back, User</h1>
+    return (<div className='body'>
+        <SideNav />
+
     </div>);
 }
  

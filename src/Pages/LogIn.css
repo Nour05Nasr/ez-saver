@@ -9,6 +9,7 @@
     background-image: url(./../Assets/log_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    align-self: stretch;
 }
 .input_div{
     display: flex;

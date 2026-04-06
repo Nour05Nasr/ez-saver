@@ -4,7 +4,7 @@ import CTA2 from '../Components/CTA2';
 import './SignUp.css';
 
 const SignUp = () => {
-    return (<div className='log_body log_div flex_column flex_row'>
+    return (<div className='log_body sign_div flex_column flex_row'>
 
             <div className='input_div'>
                <h1 className='log_h'>Create Your Account</h1>
