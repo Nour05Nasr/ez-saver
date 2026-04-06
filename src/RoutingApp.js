@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Login from './Pages/Login';
+import LogIn from './Pages/LogIn';
 import Dashboard from './Pages/Dashboard';
 import Error404 from './Pages/Error404';
 
@@ -9,7 +9,7 @@ const RoutingApp = () => {
         
     <BrowserRouter>
     <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<LogIn />} />
         <Route path="/dashboard" element={<Dashboard />} />
 
 
