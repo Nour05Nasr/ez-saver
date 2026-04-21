@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home';
-import Policy from './Pages/Policy';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
+import Home from './Pages/Home.jsx';
+import Policy from './Pages/Policy.jsx';
+import About from './Pages/About.jsx';
+import Contact from './Pages/Contact.jsx';
 import Services from './Pages/Services.jsx';
-import Career from './Pages/Career';
-import JobDesc from './Pages/JobDesc';
+import Career from './Pages/Career.jsx';
+import JobDesc from './Pages/JobDesc.jsx';
 import JobApp from './Pages/JobApp.jsx';
-import Blogs from './Pages/Blogs';
-import Error404 from './Pages/Error404';
+import Blogs from './Pages/Blogs.jsx';
+import Error404 from './Pages/Error404.jsx';
 
 const RoutingApp = () => {
     return (
@@ -22,8 +22,8 @@ const RoutingApp = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/services" element={<Services />} />
         <Route path="/career" element={<Career />} />
-        <Route path="/career/JobDesc" element={<JobDesc />} />
-        <Route path="/career/JobApp" element={<JobApp />} />
+        <Route path="/JobDesc" element={<JobDesc />} />
+        <Route path="/JobApp" element={<JobApp />} />
         <Route path="/blogs" element={<Blogs />} />
 
         <Route path="*" element={<Error404 />} />

@@ -12,21 +12,20 @@ const DuoCard = (props) => {
               {/* <H2 title='What EZ-SAVER Offers?'/> */}
       
       <div className="card-outer">
-        {/* Blue Section */}
+ 
         <div className="panel blue-panel">
           <div className="text-box left-text">
             <h2 className='about_h'>{props.title1}</h2>
             <p className='about_p'>{props.text1}</p>
-            <CTA2 url='{props.url}' title='Know More'/>
+            <CTA2 url={props.url1} title='Know More'/>
           </div>
         </div>
 
-        {/* Orange Section */}
         <div className="panel orange-panel">
           <div className="text-box right-text">
             <h2 className='about_h'>{props.title2}</h2>
             <p className='about_p'>{props.text2}</p>
-            <CTA1 url='*' title='Know More'/>
+            <CTA1 url={props.url2} title='Know More'/>
           </div>
         </div>
       </div>
