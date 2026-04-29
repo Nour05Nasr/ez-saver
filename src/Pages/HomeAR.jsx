@@ -39,7 +39,7 @@ const Home = () => {
     <Nav />
     <section className='hero'>
         <div className='hero_text'>
-           <h1 className='hero_h'>Experince Grocerry Shopping Like Never Before</h1>
+           <h1 className='hero_h'>تجربة تسوق كما لم تجربها من قبل</h1>
            <CTA2 url='/about' title='Know More'/>
         </div>
     </section>

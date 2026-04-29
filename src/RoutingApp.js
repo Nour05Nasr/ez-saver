@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home.jsx';
+import HomeAR from './Pages/HomeAR.jsx';
 import Policy from './Pages/Policy.jsx';
 import About from './Pages/About.jsx';
 import Contact from './Pages/Contact.jsx';
@@ -17,6 +18,7 @@ const RoutingApp = () => {
     <BrowserRouter>
     <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/AR" element={<HomeAR />} />
         <Route path="/policy" element={<Policy />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
