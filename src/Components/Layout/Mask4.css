@@ -1,0 +1,44 @@
+/* .mask2{
+ clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 90% 60%, 0 80%);
+    background-image: linear-gradient(242deg, #2952D8 -0.42%, #121180 50.54%, #060528 101.33%);
+    background-color: #121180;
+    background-image: url(../../Assets/about.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    width: 1521px;
+    height: 140vh;
+} */
+.mask4{
+    top: 0;
+    background-image: url(../../Assets/mask4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1521px;
+    height: 145vh;
+        position: absolute;
+    z-index: 2;
+}
+/* .element {
+    background-image: url(../../Assets/policy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  mask: url(#myMaskID);
+} */
+.mask2_h{
+    margin: 52% 0 0 64%;
+    color: var(--main_color);
+}
+
+
+.main_title_overlay {
+    position: absolute;
+    top: 750px; 
+    left: 6%;
+    z-index: 10;
+    color: white;
+    font-size: 2.5rem;
+    font-family: var(--font_1);
+    text-transform: uppercase;
+}
+

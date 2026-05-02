@@ -10,16 +10,14 @@ import './StackCard.css';
 
 const StackCard = (props) => {
     return ( 
-        <>
                 <div className='flex'>
                   <div className="div_temp1">
                     <h2 className='about_h'>{props.title}</h2>
                     <p className='about_p'>{props.text}</p>
-                    <CTA2 url='+' title='Know More'/>
+                    <CTA2 url={props.url} title='Know More'/>
                   </div>
                   <img className='stack_img' src={props.img} alt={props.alt} />
                 </div>
-        </>
      );
 }
  

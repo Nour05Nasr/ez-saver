@@ -10,18 +10,12 @@ const Nav = (props) => {
     const location = useLocation();
     const currentPath = location.pathname;
 
-    // Check if the current path ends with 'AR'
     const isArabic = currentPath.endsWith('AR');
 
-    // Logic to determine the target URL:
-    // If /aboutAR -> target is /about
-    // If /about -> target is /aboutAR
-    // Handle root path / separately for /HomeAR
     const toggleLanguagePath = () => {
         if (isArabic) {
             return currentPath.replace('AR', '');
         } else {
-            // If at root '/', go to '/HomeAR', otherwise just append 'AR'
             return currentPath === '/' ? '/AR' : `${currentPath}AR`;
         }
     };
@@ -51,8 +45,8 @@ const Nav = (props) => {
             </div>
             
             <div className='cta_div'>
-                <CTA1 url='*' title='Download App'/>
-                <CTA2 url='*' title='Book Demo'/>
+                <CTA1 url='/Download' title='Download App'/>
+                <CTA2 url='/Demo' title='Book Demo'/>
             </div>
         </div>
     );
