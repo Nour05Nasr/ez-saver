@@ -27,14 +27,14 @@ const Services = () => {
                             </p>
                             <h2 className='service_h2'>WHY PARTNER WITH EZ-SAVER ?</h2>
                             <ul className='benefit_list'>
-                                <li className='about_p'><FaCheck className="icon" /> Increase customer satisfaction and loyalty</li>
-                                <li className='about_p'><FaCheck className="icon" /> Reduce checkout lines and wait times</li>
-                                <li className='about_p'><FaCheck className="icon" /> Gain valuable shopping insights and analytics</li>
-                                <li className='about_p'><FaCheck className="icon" /> Easy integration with existing systems</li>
-                                <li className='about_p'><FaCheck className="icon" /> Dedicated support team</li>
+                                <li className='about_p'><FaCheck className="icon2" /> Increase customer satisfaction and loyalty</li>
+                                <li className='about_p'><FaCheck className="icon2" /> Reduce checkout lines and wait times</li>
+                                <li className='about_p'><FaCheck className="icon2" /> Gain valuable shopping insights and analytics</li>
+                                <li className='about_p'><FaCheck className="icon2" /> Easy integration with existing systems</li>
+                                <li className='about_p'><FaCheck className="icon2" /> Dedicated support team</li>
                             </ul>
                         <div className='top_marg'>
-                            <CTA2 title='Know Details' url='Demo'/>
+                            <CTA2 title='Know Details' url='/Demo'/>
                             </div>
                         </div>
                     </div>

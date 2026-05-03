@@ -1,3 +1,8 @@
 .marg{
     margin: 0;
 }
+
+.icon2{
+    margin-right: 12px;
+    color: var(--accent_color);
+}

@@ -68,7 +68,8 @@
 
 .icon {
     margin-right: 12px;
-    color: white;
+    color: var(--secondry_color);
+    /* color: var(--primary_color); */
 }
 
 .top_marg{

@@ -16,7 +16,14 @@
     padding: 0;
     background-color: var(--primary_color);
   }
+  .flex_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
   .body_home{
+        position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
