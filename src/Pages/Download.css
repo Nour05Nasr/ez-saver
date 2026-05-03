@@ -1,0 +1,9 @@
+.download_body{
+    /* height: 120vh; */
+    position: relative;
+    background-color: var(--accent_color);
+}
+
+.primary_color,h2{
+    color: var(--primary_color) !important;
+}

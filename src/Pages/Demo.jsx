@@ -49,7 +49,7 @@ const Demo = () => {
           title5='Message' text5='Enter your message'
           />
 
-            <div className='column_start w'>
+            <div className='column_start w bottom'>
                         <h5 className='mask_h primary_color'>Contact Information</h5>
                         <div className='top w'>
             <WhyCard title='Why Partner with EZ-saver ?' 

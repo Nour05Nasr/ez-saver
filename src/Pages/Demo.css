@@ -65,3 +65,7 @@ mix-blend-mode: saturation;
     font-weight: 600;
     color: var(--main_color);
 }
+
+.bottom{
+    margin-bottom: 10%;
+}
