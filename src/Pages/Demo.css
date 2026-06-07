@@ -23,9 +23,9 @@
     /* opacity: 0.4; */
 mix-blend-mode: saturation;
 }
-.primary_color{
+/* .primary_color{
     color: var(--primary_color) !important;
-}
+} */
 
 .top1{
     margin-top: 8%;

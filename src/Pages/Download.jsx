@@ -51,21 +51,21 @@ const Download = () => {
   <ScrollStackItem>
     <StackCard img={effort} alt='ez-saver save effort'
      title='Save Effort'
-     url="/Services"
+     url="/About"
       text='Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds.'/>
   </ScrollStackItem>
 
   <ScrollStackItem>
     <StackCard  img={time} alt='ez-saver save time'
      title="Save Time"
-     url="/Services"
+     url="/About"
       text='Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds.' url="/Category/UI_UX_Design"/>
   </ScrollStackItem>
 
   <ScrollStackItem>
     <StackCard  img={money} alt='ez-saver save money' 
     title="Save Money" 
-     url="/Services"
+     url="/About"
     text='Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds.' url="/Category/Web_Design"/>
   </ScrollStackItem>
   </ScrollStack>

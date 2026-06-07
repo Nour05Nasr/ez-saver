@@ -3,7 +3,7 @@ import H2 from '../Common/H2';
 import faq from '../../Assets/faq.jpg';
 import './Faq.css';
 
-  const items = ['1 This is a question ?', '2 This is a question ?', '3 This is a question ?', '4 This is a question ?', '5 This is a question ?', '6 This is a question ?', '7 This is a question ?', '8 This is a question ?', '7 This is a question ?', '8 This is a question ?']; 
+  const items = ['1 This is a question ?', '2 This is a question ?', '3 This is a question ?', '4 This is a question ?', '5 This is a question ?', '6 This is a question ?', '7 This is a question ?'];
 
 const Faq = () => {
     return ( <section className='faq'>

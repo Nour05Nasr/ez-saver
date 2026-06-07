@@ -15,6 +15,8 @@ const About = () => {
         <CardSwap />
 
     <section className='flex_column arrows_section'>
+    <div className='flex_column' style={{ width: '100%', height: '100vh' }}>
+
         <div className='flex_start'>
         <div className='mission_card'>
             <h2 className='about_h'>Our Goals</h2>
@@ -35,6 +37,7 @@ const About = () => {
             <p className='arrow_p'>cohesive ecosystem that respects users’ habits while enhancing them. EZ SAVER bridges digital innovation with cultural familiarity, ensuring that every feature feels intuitive, inclusive, and simple at heart.  EZ Saver strives to be the essential tool for the busy Egyptian family, empowering them to manage their time and budget effortlessly while delivering a reliable, engaging and personalized retail experience.</p>
         </div>
         </div>
+    </div>
     </section>
 
     {/* <ScrollVelocity
