@@ -1,245 +1,224 @@
-.connect_temp{
+.connect_temp {
   width: 100%;
-  /* height: 6vh; */
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-  /* padding: 2%; */
-  /* margin-top: 3%; */
-  /* border-radius: 4%; */
-  /* border-radius: 11000px 11000px 0 0;   */
-  /* background: rgba(155, 155, 155, 0.25); */
-  /* backdrop-filter: blur(80px); */
 }
-.footer_row{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-    padding-top: 12%;
-    /* background-color: aqua; */
-}
+
 .footer-section {
-    background-image: url(../../Assets/footer_bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1200px;
-  padding: 0 2% 0;
-  z-index: -99;
-  /* background: var(--primary-color); */
+  background-image: url(../../Assets/footer_bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* FIXED: Changed fixed 1200px height to a safe, fluid min-height */
+  min-height: auto; 
+  /* FIXED: Used clamp for fluid padding that safely shrinks on small viewports */
+  padding: clamp(2rem, 5vw, 6rem) clamp(1rem, 3vw, 2rem);
+  z-index: 1;
   position: relative;
+  overflow: hidden;
 }
-.footer_container{
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: right;
-    padding-top: 41%;
-    margin: 0;
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  /* FIXED: Replaced massive 41% padding with fluid layout spacing */
+  gap: clamp(2rem, 4vw, 4rem);
+  margin: 0;
+  width: 100%;
 }
-.footer_p{
-      width: 80%;
+
+.footer_row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* FIXED: wrap handles screen reduction gracefully instead of squeezing layouts */
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+/* FIXED: Replaced rigid pixel sizes with fluid clamp rules */
+.footer_h {
+  margin: 0;
   font-family: var(--font_2);
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 120%;
-    text-align: left;
-    /* margin: 6% 0; */
-    color: var(--primary_color);
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+  color: var(--main_color);
 }
-.footer-cta {
-  border-bottom: 1px solid var(--primary-color);
-}
-.single-cta i {
+
+.footer_p {
+  /* FIXED: Shifted from strict 80% width to fluid max-width bounds */
+  width: 100%;
+  max-width: 500px;
   font-family: var(--font_2);
-  color: var(--background-color);
-  font-size: 30px;
-  float: left;
-  margin-top: 8px;
+  font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+  color: var(--primary_color);
 }
-.cta-text {
-  padding-left: 15px;
-  display: inline-block;
+
+.footer_menu_p {
+  font-family: var(--font_1);
+  font-size: clamp(1rem, 1.3vw, 1.25rem);
+  color: var(--primary_color);
+  margin-bottom: 1rem;
 }
-.cta-text h4 {
-  font-family: var(--font_2);
-  color: var(--background-color);
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 2px;
-}
-.cta-text span {
-  color: var(--accent_color);
-  font-size: 15px;
-}
+
 .footer-content {
   position: relative;
   z-index: 2;
-  margin-left: 20%;
+  /* FIXED: Removed fixed left margin which pushes content off-screen on mobile */
+  flex: 1 1 250px; 
 }
-.footer-pattern img {
+
+.footer-logo img {
+  max-width: 140px;
+  width: 100%;
+  height: auto;
+  /* FIXED: Removed float */
+}
+
+/* --- Form and Input Fluidity --- */
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+  /* FIXED: Changes width from rigid 42% to a highly adaptive structure */
+  flex: 1 1 300px;
+  max-width: 450px;
+  border-radius: 16px;
+}
+
+.subscribe-form input {
+  width: 100%;
+  /* FIXED: Scaled down vertical padding to keep the form neat on small devices */
+  padding: clamp(14px, 2vw, 20px) 70px clamp(14px, 2vw, 20px) 16px;
+  background: var(--primary_color);
+  border: 1px solid var(--primary_color);
+  color: var(--main-color);
+  box-sizing: border-box;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+}
+
+.subscribe-form button {
   position: absolute;
   top: 0;
-  left: 0;
-  height: 330px;
-  background-size: cover;
-  background-position: 100% 100%;
+  right: 0;
+  display: flex;
+  width: 60px;
+  height: 100%; /* FIXED: Pins button perfectly to match input height dynamically */
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: linear-gradient(90deg, #E57D02 5.29%, #FA921C 76.92%, #FFA931 100%);
+  cursor: pointer;
 }
-.footer-logo img {
-    max-width: 140px;
-    float: right;
+
+/* --- CTA Elements Fluidity --- */
+.footer-cta {
+  border-bottom: 1px solid var(--primary-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
 }
-.footer_top{
-    margin-top: 2%;
+
+.single-cta {
+  flex: 1 1 220px;
+  display: flex;
+  align-items: center;
 }
-.footer-text p {
-  margin-bottom: 14px;
-  font-size: 14px;
-  color: var(--accent_color);
-  line-height: 28px;
-}
-.footer-social-icon span {
-  color: var(--background-color);
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
+
+.single-cta i {
   font-family: var(--font_2);
-  margin-bottom: 20px;
-}
-.footer-social-icon a {
   color: var(--background-color);
-  font-size: 16px;
-  margin-right: 15px;
+  font-size: clamp(1.5rem, 2vw, 2rem);
 }
-.footer-social-icon i {
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 38px;
-  border-radius: 50%;
+
+.cta-text {
+  padding-left: 15px;
 }
+
+.cta-text h4 {
+  font-family: var(--font_2);
+  color: var(--background-color);
+  font-size: clamp(1.1rem, 1.3vw, 1.3rem);
+  font-weight: 600;
+  margin: 0 0 2px 0;
+}
+
+.cta-text span {
+  color: var(--accent_color);
+  font-size: clamp(0.85rem, 1vw, 0.95rem);
+}
+
+/* --- Navigation Links Fluidity --- */
 .footer-widget-heading h3 {
   color: var(--main_color);
-  font-size: 28px;
+  font-size: clamp(1.3rem, 1.8vw, 1.7rem);
   font-weight: 600;
   margin-bottom: 20px;
   position: relative;
 }
-.footer-widget-heading h3::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -15px;
-  height: 2px;
-  width: 50px;
-  background: var(--primary-color);
+
+.footer-widget ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
 .footer-widget ul li {
-  display: inline-block;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
   margin-bottom: 12px;
-  text-decoration: none;
-  /* margin: 0 !important;
-  padding: 0 !important;
-    margin-block-start: 0 !important;
-    margin-block-end: 0 !important;
-    padding-inline-start: 0 !important; */
 }
-.footer-widget ul li a:hover{
-  color: var(--accent_color) !important;
-  text-decoration: none;
-}
+
 .footer-widget ul li a {
   color: #cecdcd;
   text-transform: capitalize;
-    text-decoration: none;
+  text-decoration: none;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+  transition: color 0.3s ease;
 }
-.subscribe-form {
-  position: relative;
-  overflow: hidden;
-    width: 42%;
-    border-radius: 16px;
+
+.footer-widget ul li a:hover {
+  color: var(--accent_color) !important;
 }
-.subscribe-form input {
-    width: 100%;
-    padding: 24px 16px;
-    background: var(--primary_color);
-    border: 1px solid var(--primary_color);
-    color: var(--main-color);
+
+/* --- Social Icons & Patterns --- */
+.footer-social-icon span {
+  color: var(--background-color);
+  display: block;
+  font-size: clamp(1.1rem, 1.4vw, 1.4rem);
+  font-weight: 700;
+  font-family: var(--font_2);
+  margin-bottom: 20px;
 }
-.plane{
-    color: var(--main-color);
-    width: 40px;
-    height: 40px;
+
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 330px;
+  width: auto;
+  pointer-events: none;
+  opacity: 0.3; /* Keeps background decorative elements subtle on smaller screens */
 }
-.subscribe-form button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-width: 60px;
-height: 68px;
-/* padding: 0 0 8.56px 8.56px; */
-justify-content: center;
-align-items: center;
-gap: 7.635px;
-flex-shrink: 0;
-border-radius: 0px;
-background: linear-gradient(90deg, #E57D02 5.29%, #FA921C 76.92%, #FFA931 100%);
-/* box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.25) inset, 0 4px 12px 0 rgba(0, 0, 0, 0.15); */
-    /* right: 0; */
-    background-color: var(--main-color);
-    padding:22px 24px;
-    border: 1px solid var(--secondry-color);
-    /* top: 0; */
-}
-/* .subscribe-form:hover button {
-background-color: --var(accent_color);
-} */
-.subscribe-form button i {
-  color: var(--main-color);
-  font-size: 22px;
-  transform: rotate(-6deg);
-}
-.copyright-area{
+
+/* --- Copyright Area Fluidity --- */
+.copyright-area {
   background: var(--primary-color);
-  padding: 25px 0;
+  padding: 20px 0;
+  width: 100%;
 }
+
 .copyright-text p {
   margin: 0;
   font-family: var(--font_2);
-  font-size: 14px;
+  font-size: clamp(0.8rem, 1vw, 0.95rem);
   color: #cecdcd;
-}
-.copyright-text p a{
-  color: var(--background-color);
-}
-.footer-menu li {
-  display: inline-block;
-  /* margin-left: 20px; */
-}
-.footer-menu li:hover a{
-  color: var(--background-color);
-}
-.footer-menu li a {
-  font-family: var(--font_2);
-  font-size: 14px;
-  color: #cecdcd;
-}
-.footer_h{
-  margin: 0;
-  font-family: var(--font_2);
-  font-size: 2vw;
-  color: var(--main_color);
-}
-.footer_menu_p{
-    font-family: var(--font_1);
-    font-size: 18px;
-    color: var(--primary_color);
+  text-align: center;
 }

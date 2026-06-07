@@ -30,3 +30,42 @@
   height: 1px;
 }
 
+
+
+.scroll-stack-scroller {
+  position: relative;
+  width: 100%; /* Spans full horizontal space smoothly */
+  max-width: 86%; /* Replaces rigid base layouts on massive monitors */
+  height: auto;  
+  overflow: visible;
+  overflow-x: visible;
+  overscroll-behavior: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: scroll-position;
+}
+
+.scroll-stack-inner {
+  /* Fluid padding: Top scales with height (8vh), left/right scales with width */
+  padding: 8vh clamp(1rem, 5vw, 5rem) clamp(2rem, 5vw, 5rem);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; /* Keeps dynamic spacing between stacked cards */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.scroll-stack-card-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.scroll-stack-end {
+  width: 80%;
+  height: 1px;
+}

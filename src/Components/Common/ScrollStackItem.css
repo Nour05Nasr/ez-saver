@@ -16,3 +16,29 @@
 .scroll-stack-card > * {
   pointer-events: auto;
 }
+
+
+.scroll-stack-card {
+  will-change: transform;
+  transform-origin: top center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  
+  /* FIXED: Changed to min-height so cards dynamically stretch when content wraps on small screens */
+  min-height: clamp(15rem, 40vh, 22rem); 
+  height: auto;
+  width: 100%;
+  
+  /* FIXED: Fluid internal spacing */
+  padding: clamp(1.5rem, 4vw, 3rem); 
+  border-radius: clamp(20px, 4vw, 40px); /* Rounded corners scale elegantly */
+  position: relative;
+  background: var(--main_color);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+ 
+.scroll-stack-card > * {
+  pointer-events: auto;
+}

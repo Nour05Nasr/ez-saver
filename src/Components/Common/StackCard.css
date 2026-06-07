@@ -16,3 +16,33 @@
 .stack_img {
   width: 28%;
 }
+
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* FIXED: Packs items vertically on mobile screens seamlessly */
+  gap: 1.5rem;
+  width: 100%;
+}
+ 
+.div_temp1 {
+  /* FIXED: Replaced static 40% width. It will now balance out at 400px wide 
+     on desktop, but takes up 100% full width on small layout viewports */
+  flex: 1 1 400px; 
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+}
+ 
+.stack_img {
+  /* FIXED: Replaced small static percentage with modern flexible system boundaries */
+  flex: 1 1 200px;
+  max-width: 280px; /* Restricts image size on ultra-wide desktop monitors */
+  width: 100%;
+  height: auto; /* Retains clean aspect ratio protection */
+}

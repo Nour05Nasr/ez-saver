@@ -1,95 +1,102 @@
-.flex_column{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.flex_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.marg{
+.marg {
   padding: 3% 0;
 }
 
+/* --- Card Outer Shell --- */
 .card-outer {
   position: relative;
-  width: 1260px;
-  height: 450px;
+  width: 100%;
+  max-width: 1260px; /* Desktop maximum layout width */
+  min-height: 450px; /* Desktop height base line */
   border-radius: 40px;
   overflow: hidden;
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Automatically drops vertical on mobile when space runs out */
 }
 
+/* --- Base Panel Styling --- */
 .panel {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
+  position: relative;
+  /* Flex-basis of 450px means if the screen goes below ~900px combined width, 
+     the panels will automatically stack vertically 100% wide */
+  flex: 1 1 450px; 
+  min-height: 450px; 
   transition: clip-path 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-/* --- Blue Panel --- */
-.blue-panel {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+/* --- Blue Panel (Left on Desktop / Top on Mobile) --- */
+.blue-panel {
   background: linear-gradient(135deg, #3262ef, #1e3bb3);
   background-image: url(../../Assets/blue_card.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    left: 0;
-    /* Initial shape: Covers more than half with a curve */
-    /* clip-path: polygon(0% 0%, 75% 0%, 55% 100%, 0% 100%); */  clip-path: polygon(0 0, 30% 0, 60% 100%, 0 100%, 0% 50%);
-    clip-path: polygon(0 0, 36% 0, 61% 100%, 0 100%, 0% 50%);
-    
-    z-index: 1;
-  }
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   
-  /* --- Orange Panel --- */
-  .orange-panel {
-        display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #f9a132, #f37321);
+  /* Modern dynamic polygon that scales cleanly on both layout variants */
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+}
+
+/* --- Orange Panel (Right on Desktop / Bottom on Mobile) --- */
+.orange-panel {
+  background: linear-gradient(135deg, #f9a132, #f37321);
   background-image: url(../../Assets/orange_card.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  right: 0;
-  /* Initial shape: Overlaps the blue slightly */
-  clip-path: polygon(36% 0%, 100% 0%, 100% 100%, 61% 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   z-index: 2;
+  
+  /* Pulls the right panel over slightly to blend the diagonal clipping seam */
+  margin-left: -10%; 
+  padding-left: 10%;
+  
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
 }
 
-/* --- HOVER STATE: The "Parting" Animation --- */
-
-/* Blue pulls away to the left */
+/* --- Card Hover Effects --- */
 .card-outer:hover .blue-panel {
-  /* clip-path: polygon(0% 0%, 60% 0%, 35% 100%, 0% 100%); */
-  clip-path: polygon(0 0, 38% 0, 55% 100%, 0 100%, 0% 50%);
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
 }
 
-/* Orange pulls away to the right */
 .card-outer:hover .orange-panel {
-  clip-path: polygon(42% 0%, 100% 0%, 100% 100%, 59% 100%);
+  clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%);
 }
 
-/* --- Text & Buttons --- */
+/* --- Inner Fluid Typography & Text Layout --- */
 .text-box {
-  position: absolute;
-  width: 40%;
+  position: relative;
+  width: 100%;
+  max-width: 80%;
   color: white;
-  padding: 40px;
+  padding: clamp(20px, 4vw, 40px); /* Fluid text pad scaling */
+  box-sizing: border-box;
 }
 
-.left-text { left: 0;
-  width: 40%;
+.left-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
+  text-align: left;
 }
-.right-text { right: 0; 
-  text-align: right;
-    width: 40%;
+
+.right-text { 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: end;
- }
+  align-items: flex-end;
+  text-align: right;
+}

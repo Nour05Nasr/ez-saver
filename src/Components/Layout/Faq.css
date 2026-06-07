@@ -47,3 +47,74 @@ z-index: 3;
     margin: 0;
     color: var(--primary_color);
 }
+
+
+
+
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.faq_section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Added padding so text container never touches the very edges of smaller screens */
+  padding: clamp(1rem, 3vw, 2.5rem); 
+  box-sizing: border-box;
+}
+
+.faq_div {
+  /* FIXED: Added missing unit syntax */
+  width: 100%; 
+  max-width: 1200px; /* Gives a safe maximum container wall for large screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.faq_text_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: rgba(18, 17, 128, 0.60);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); /* Ensures Safari support */
+  
+  /* FIXED: Removed 814px width and 160px height */
+  width: 100%;
+  max-width: 814px; /* Acts as the original size on desktop, but safely shrinks on mobile */
+  min-height: auto; /* Allows container to expand dynamically if text wraps onto new lines */
+  
+  /* FIXED: Fluid padding matches screen scale */
+  padding: clamp(12px, 2.5vw, 24px); 
+  gap: clamp(10px, 1.5vw, 16px);
+  
+  /* FIXED: Cleared hardcoded absolute positioning shifts that break mobile layouts */
+  position: relative; 
+  z-index: 3;
+  margin: 1.5rem auto;
+  border-radius: 8px; /* Clean edge rendering */
+  box-sizing: border-box;
+}
+
+.faq_p {
+  margin: 0;
+  width: 100%;
+  font-family: var(--font_2);
+  /* FIXED: Fluid font-scaling ensures text reads well anywhere */
+  font-size: clamp(0.9rem, 1.1vw, 1.05rem); 
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4; /* Slightly expanded for optimized legibility when scaled down */
+  text-align: left;
+  color: var(--primary_color);
+}
