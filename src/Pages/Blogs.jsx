@@ -20,7 +20,7 @@ const Blogs = () => {
 
             <TextImgCard img={blogs_img} title='About Blogs' text='Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items ate the store quickly with indoor navigation and AR directions to find items in seconds. Navigate the store quickly with indoor navigation and AR directions to find items in seconds.'/>
 
-            <section className='flex w'>
+            <section className='flex_row w'>
                         <div className='blog_text'>
                             <div className='text'>
                             <h3 className='about_h'>Shopping with EZ-SAVER</h3>
@@ -32,7 +32,7 @@ const Blogs = () => {
                             </div>
                         </div>
                   <div className='flex_column ww'>
-                    <div className='flex www'>
+                    <div className='flex_row www'>
                         <div className='blog_text2'>
                          <div className='text'>
                             <h3 className='about_h'>Shopping with EZ-SAVER</h3>

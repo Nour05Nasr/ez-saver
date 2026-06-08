@@ -10,6 +10,7 @@ const AboutCard = () => {
            <CTA2 url='/about' title='Know More'/>
         </div>
     </section> );
+    
 }
  
 export default AboutCard;

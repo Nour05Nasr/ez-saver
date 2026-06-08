@@ -93,7 +93,6 @@ padding-top: 562px;
     background-image: url(./../Assets/blog2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
 display: flex;
 width: 100%;
 /* height: 415px; */
@@ -116,7 +115,6 @@ padding-top: 562px;
     background-image: url(./../Assets/blog3.png);
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
 display: flex;
 width: 100%;
 /* height: 415px; */
@@ -143,7 +141,6 @@ padding-top: 562px;
     background-image: url(./../Assets/blog4.png);
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
 display: flex;
 width: 94%;
 height: 60%;
